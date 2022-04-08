@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .menu {
+            float: left;
+            width: 20%;
+        }
+
+        .menuitem {
+            padding: 8px;
+            margin-top: 7px;
+            border-bottom: 1px solid #f1f1f1;
+        }
+
+        .main {
+            float: left;
+            width: 60%;
+            padding: 0 20px;
+            overflow: hidden;
+        }
+
+        .right {
+            background-color: lightblue;
+            float: left;
+            width: 20%;
+            padding: 10px 15px;
+            margin-top: 7px;
+        }
+
+        @media only screen and (max-width:800px) {
+
+            /* For tablets: */
+            .main {
+                width: 80%;
+                padding: 0;
+            }
+
+            .right {
+                width: 100%;
+            }
+        }
+
+        @media only screen and (max-width:500px) {
+
+            /* For mobile phones: */
+            .menu,
+            .main,
+            .right {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body style="font-family:Verdana;">
+
+    <div style="background-color:#d87d7d;padding:15px;">
+        <h1>Hello!</h1>
+        <h3>Learn about Paris!</h3>
+    </div>
+
+    <div style="overflow:auto">
+        <div class="menu">
+            <div class="menuitem">Cultural Life</div>
+            <div class="menuitem">Transport</div>
+            <div class="menuitem">History</div>
+            <div class="menuitem">Gallery</div>
+            <div class="menuitem">Tourist Attractions</div>
+        </div>
+
+        <div class="main">
+            <h2>Cultural Life</h2>
+            <p>Paris has for centuries been regarded as the main cultural powerhouse of the Western world, a magnet for
+                artists and
+                intellectuals and a place where new ideas originate and art reigns supreme.</p>
+            <img src="paris.jpg" style="width:100%">
+        </div>
+
+        <div class="right">
+            <h2>Climate</h2>
+            <p>Paris has a typical Western European oceanic climate , which is affected by the North Atlantic
+                Current.The overall climate throughout the year is mild and moderately wet.</p>
+            <h2>Language</h2>
+            <p>The official language in Paris and the rest of France is French. Contrary to other counties, English
+                isn't widely spoken. Although Parisians do not generally speak or like to speak English, tourists won't
+                have any problems communicating in this language in most hotels,restaurants and shops.</p>
+            <h2>Must try food!</h2>
+            <p>Café & Croissant,Croque Monsieur, Croque Madame,Jambon-Beurre,Caramels,CHOCOLATE</p>
+            <h2>Shopping streets!</h2>
+            <p>Avenue des Champs-Élysées,Rue de Rivoli,The Champs-Élysées,Rue Saint-Honoré,Boulevard Haussmann</p>
+        </div>
+    </div>
+
+
+    <div style="background-color:#d48c8c;text-align:center;padding:10px;margin-top:7px;font-size:12px;"> Thank you for
+        visting our Website!!:)</div>
+
+</body>
+
+</html>
